@@ -1,10 +1,7 @@
-# gatsby-starter-hello-world
-Starter with the bare essentials needed for a [Gatsby](https://www.gatsbyjs.org/) site
+# Personal Site. 
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-```
-gatsby new gatsby-site https://github.com/gatsbyjs/gatsby-starter-hello-world
-```
+This is the repo for my [personal site](https://lvrbrtsn.com)
+it was built with Gatsby JS a static site generator for React.
 
 ## Running in development
 `gatsby develop`
