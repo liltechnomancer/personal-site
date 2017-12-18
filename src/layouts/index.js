@@ -21,9 +21,14 @@ const inBack = css`
   z-index: -1 !important;
 `;
 
+const Container = styled.div`
+  min-height: 100vh;
+  padding: 2rem;
+`;
+
 export default ({ children, data }) => (
   <Content>
-    <Nav>
+    <Nav style={{ padding: "0 2rem" }}>
       <Link to={`/`}>
         <Title>{data.site.siteMetadata.title}</Title>
       </Link>
@@ -37,7 +42,7 @@ export default ({ children, data }) => (
       </LinkContainer>
     </Nav>
 
-    {children()}
+    <Container>{children()}</Container>
   </Content>
 );
 
