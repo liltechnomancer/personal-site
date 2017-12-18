@@ -1,12 +1,14 @@
 import React from "react";
 import Posts from "../ui/posts";
-import hero from "../images/road.jpg";
-import { Background } from "../styles/core.js";
+import BackgroundImage from "../ui/background-image";
 
 export default ({ data }) => {
   const posts = data.allMarkdownRemark.edges;
   const total = data.allMarkdownRemark.totalCount;
-  return [<Background src={hero} />, <Posts posts={posts} total={total} />];
+  return [
+    <Posts key="posts" posts={posts} total={total} />,
+    <BackgroundImage key="background" image={data.file.childImageSharp.sizes} />
+  ];
 };
 
 export const query = graphql`
@@ -24,6 +26,13 @@ export const query = graphql`
             slug
           }
           excerpt
+        }
+      }
+    }
+    file(relativePath: { eq: "images/road.jpg" }) {
+      childImageSharp {
+        sizes(maxHeight: 900) {
+          ...GatsbyImageSharpSizes_tracedSVG
         }
       }
     }

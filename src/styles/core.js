@@ -11,18 +11,21 @@ export const Button = styled.button`
   transition: all 0.25s ease;
   border: 0.15rem solid #d24d57;
 `;
-export const Background = styled.img`
-  max-height: 100%;
-  min-width: 100%
-  overflow: hidden;
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  margin-bottom: -20px;
-  filter: blur(15px) opacity(30%) grayscale(30%);
-  z-index: -1;
-  background-position: right;
-  background-repeat: no-repeat;
+
+export const background = css`
+  img {
+    max-height: 100%;
+    min-width: 100%
+    overflow: hidden;
+    position: fixed !important;
+    right: 0;
+    bottom: 0;
+    margin-bottom: -20px;
+    filter: blur(20px) opacity(20%);
+    z-index: -1;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
 `;
 export const H3 = styled.h3`
   marginbottom: ${rhythm(1 / 4)};
