@@ -11,6 +11,7 @@ module.exports = {
       }
     },
     "gatsby-transformer-remark",
+    "gatsby-plugin-react-next",
     `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-plugin-typography`,

@@ -18,7 +18,6 @@ const Background = styled.img`
 `;
 
 export default ({ data }) => {
-  console.log(data);
   return (
     <div>
       <Background src={hero} />
