@@ -2,8 +2,8 @@ import styled, { css, injectGlobal } from "react-emotion";
 import { rhythm } from "../utils/typography";
 
 export const Content = styled.div`
-  outline: 2px solid black;
-  margin: 0 auto;
+  outline: 2px solid #1ca086;
+  margin: 0.5rem;
   padding: 0 ${rhythm(1 / 4)};
   background-color: rgba(255, 255, 255, 0.35);
   max-width: 800px;

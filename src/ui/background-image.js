@@ -10,8 +10,11 @@ const inBack = css`
 
 export default ({ image }) => (
   <Img
+    fadeIn={false}
+    position={"absolute"}
     outerWrapperClassName={inBack}
     className={background}
-    resolutions={image}
+    sizes={image}
+    style={{ display: "inherit" }}
   />
 );

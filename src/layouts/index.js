@@ -7,6 +7,7 @@ import { Nav, Links, Title } from "../styles/core.js";
 import hero from "../images/road.jpg";
 import { background } from "../styles/core.js";
 import Img from "gatsby-image";
+import BackgroundImage from "../ui/background-image";
 
 import { rhythm } from "../utils/typography";
 
@@ -26,24 +27,30 @@ const Container = styled.div`
   padding: 2rem;
 `;
 
-export default ({ children, data }) => (
-  <Content>
-    <Nav style={{ padding: "0 2rem" }}>
-      <Link to={`/`}>
-        <Title>{data.site.siteMetadata.title}</Title>
-      </Link>
-      <LinkContainer>
-        <Link style={{ backgroundImage: "none" }} to={`/about/`}>
-          <Links>About</Links>
-        </Link>
-        <Link style={{ backgroundImage: "none" }} to={`/blog/`}>
-          <Links>Blog</Links>
-        </Link>
-      </LinkContainer>
-    </Nav>
+const Site = styled.div`
+  margin: 0 auto;
+  max-width: 800px;
+`;
 
-    <Container>{children()}</Container>
-  </Content>
+export default ({ children, data }) => (
+  <Site>
+    <Content>
+      <Nav style={{ padding: "0 2rem" }}>
+        <Link to={`/`}>
+          <Title>{data.site.siteMetadata.title}</Title>
+        </Link>
+        <LinkContainer>
+          <Link style={{ backgroundImage: "none" }} to={`/about/`}>
+            <Links>About</Links>
+          </Link>
+          <Link style={{ backgroundImage: "none" }} to={`/blog/`}>
+            <Links>Blog</Links>
+          </Link>
+        </LinkContainer>
+      </Nav>
+      <Container>{children()}</Container>
+    </Content>
+  </Site>
 );
 
 export const query = graphql`

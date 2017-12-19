@@ -12,7 +12,6 @@ export default ({ data }) => {
       <Hero />
       <Clients />
       <Posts posts={posts} total={totalPosts} />
-      <BackgroundImage image={data.file.childImageSharp.sizes} />
     </div>
   );
 };
@@ -32,13 +31,6 @@ export const query = graphql`
             slug
           }
           excerpt
-        }
-      }
-    }
-    file(relativePath: { eq: "images/road.jpg" }) {
-      childImageSharp {
-        sizes(maxHeight: 900) {
-          ...GatsbyImageSharpSizes_tracedSVG
         }
       }
     }

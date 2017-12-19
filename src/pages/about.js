@@ -10,7 +10,6 @@ export default ({ data }) => {
         stuff on Medium, but usually I make stuff for the web. Check out my
         work!
       </p>
-      <BackgroundImage image={data.file.childImageSharp.sizes} />
     </div>
   );
 };
@@ -20,13 +19,6 @@ export const query = graphql`
     site {
       siteMetadata {
         title
-      }
-    }
-    file(relativePath: { eq: "images/road.jpg" }) {
-      childImageSharp {
-        sizes(maxHeight: 900) {
-          ...GatsbyImageSharpSizes_tracedSVG
-        }
       }
     }
   }
