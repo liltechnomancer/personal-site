@@ -7,6 +7,8 @@ date: "2016-05-28"
 
 [The Wrecking Ball Parody](https://vimeo.com/87545616) he did is one of the finest example of it as art that I have ever seen. The video he did for [Watsky](https://www.youtube.com/watch?v=NNRGTmu5Sok) also super amazing. So, naturally I wanted to see if I could replicate one of his videos.
 
+![Datamoshed](datamosh.png)
+
 _This is NOT an explanation of datamoshing, or an explanation on why it works. Also, you need Ruby installed on your system and need to be comfortable in the command line to follow this tutorial._
 
 Before we get into this I want to say, I don’t actually think me and him used the same technique. As a web developer I wanted to do it mostly in the command line. I believe he did most of his work in Avidmux. Although I could be wrong. I want to be clear this is how I like to datamosh, there are plenty of other ways, I just think this is the most simple and efficient. All of the techniques take extensive knowledge of something, either feeling comfortable in the command line or being comfortable getting down and dirty with some pretty old software . That said, lets get started.
@@ -48,6 +50,6 @@ Now the video is pretty much done, but you probably want it in an .mp4 again to
 
 `ffmpeg -i input.avi -strict -2 output.mp4`
 
-gif
+![Datamoshed](datamosh.gif)
 
 There, now you are officially done! Go post that shit somewhere. Thanks for reading and be sure to follow me on [twitter](https://www.twitter.com/lvrbrtsn).

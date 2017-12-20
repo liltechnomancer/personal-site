@@ -1,10 +1,9 @@
 import React from "react";
 import styled, { css, injectGlobal } from "react-emotion";
 import { Heading } from "../styles/core";
+import road from "../images/road.jpg";
 
-const Hero = styled.div`
-  color: black;
-`;
+const Hero = styled.div``;
 
 export default () => (
   <Hero>

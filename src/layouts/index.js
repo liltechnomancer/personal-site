@@ -25,7 +25,8 @@ const inBack = css`
 
 const Container = styled.div`
   min-height: 100vh;
-  padding: 2rem;
+  padding: ${rhythm(1)};
+  margin: 0;
 `;
 
 const Site = styled.div`
