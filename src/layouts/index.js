@@ -3,7 +3,8 @@ import Link from "gatsby-link";
 import styled, { css, injectGlobal } from "react-emotion";
 import header from "../images/blur.jpg";
 import { Content } from "../styles/layout.js";
-import { Nav, Links, Title } from "../styles/core.js";
+import { Nav, Title } from "../styles/core.js";
+import Links from "../ui/nav-links";
 import hero from "../images/road.jpg";
 import { background } from "../styles/core.js";
 import Img from "gatsby-image";
@@ -39,14 +40,7 @@ export default ({ children, data }) => (
         <Link to={`/`}>
           <Title>{data.site.siteMetadata.title}</Title>
         </Link>
-        <LinkContainer>
-          <Link style={{ backgroundImage: "none" }} to={`/about/`}>
-            <Links>About</Links>
-          </Link>
-          <Link style={{ backgroundImage: "none" }} to={`/blog/`}>
-            <Links>Blog</Links>
-          </Link>
-        </LinkContainer>
+        <Links />
       </Nav>
       <Container>{children()}</Container>
     </Content>

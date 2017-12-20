@@ -49,7 +49,7 @@ export const Nav = styled.nav`
 `;
 
 export const Links = styled.p`
-  margin: 0;
+  margin: 0 0.5rem;
   padding: 0;
   text-decoration: none;
 `;
