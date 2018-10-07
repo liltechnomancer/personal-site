@@ -17,7 +17,7 @@ export const Box = styled.div`
 export const Space = styled.div`
   display: grid;
   grid-column-gap: ${rhythm(1)};
-  grid-template-columns: 3rem auto;
+  grid-template-columns: 2rem 8rem;
   justify-self: start;
 `;
 
