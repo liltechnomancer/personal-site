@@ -40,6 +40,9 @@ const Form = styled.form`
 export default () => (
   <Hero>
     <Heading>Levi Robertson</Heading>
+    <div>
+      <a href="mailto:levi@lvrbrtsn.com">levi@lvrbrtsn.com</a>
+    </div>
     <h3>JavaScript Coaching & Consulting</h3>
     <p>
       I am a full-stack JavaScript Developer living in Phoenix, Arizona. I
