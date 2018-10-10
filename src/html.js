@@ -34,6 +34,20 @@ module.exports = class HTML extends React.Component {
         </head>
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-127070111-1"
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-127070111-1');`
+            }}
+          />
           <div
             key={`body`}
             id="___gatsby"
