@@ -9,13 +9,4 @@ const LinkContainer = styled.div`
   justify-content: space-between;
 `;
 
-export default () => (
-  <LinkContainer>
-    <Link style={{ backgroundImage: "none" }} to={`/about/`}>
-      <Links>About</Links>
-    </Link>
-    <Link style={{ backgroundImage: "none" }} to={`/blog/`}>
-      <Links>Blog</Links>
-    </Link>
-  </LinkContainer>
-);
+export default () => <LinkContainer />;
